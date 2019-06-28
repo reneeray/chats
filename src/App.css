@@ -1,33 +1,75 @@
 .App {
   text-align: center;
-}
+  background: #F0C27B;  /* fallback for old browsers */
+  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+height: 100vh;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
 }
+.message-box{
+height: 50px;
+width: 75%;
+font-size: 40px;
+color: rgb(44,88,100);
+position: absolute;
+bottom: 0;
+left: 12.5%;
+padding: 0 15px;
+outline: none;
+border-radius: 10px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+}
+.app-header{
+  color: rgb(10, 60, 71);
+  position: absolute;
+  font-size: 40px;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  padding: 10
+  px;
+  border-radius: 50px;
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+background: rgba(255,255,255,0.2);
+
+}
+.logo{
+  height: 100px;
+}
+.text-input{
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  border-top: 2px solid purple;
+  display: flex;
+  align-items: center;
+}
+/* to style a class, type input afterwards: */
+.text-input input{
+  width: calc(100% - 50px);
+  height: 100%;
+  font-size: 34px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 10px;
+  color: rgb(44,88,100);
+  outline: none;
+}
+
+.text-input button{
+  height: 100%;
+  width: 50px;
+  border-radius: 20px;
+  
+}
+
+.text-input button:hover {
   color: white;
-}
+  background: teal;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
