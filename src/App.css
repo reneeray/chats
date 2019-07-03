@@ -24,7 +24,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .app-header{
   color: rgb(10, 60, 71);
-  position: absolute;
   font-size: 40px;
   text-align: left;
   top: 0;
@@ -53,28 +52,29 @@ background: rgba(255,255,255,0.2);
 /* to style a class, type input afterwards: */
 .text-input input{
   position: absolute;
-  border-radius: 15px;
-  border: 1px solid white;
-  bottom: 0px;
-  left: 1px;
-  width: calc(100% - 50px);
-  height: 100%;
-  font-size: 34px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding-left: 10px;
-  color: rgb(44,88,100);
-  background:black;
-  outline: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    bottom: 0px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: 37px;
+    font-size: 34px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 10px;
+    color: rgb(44,88,100);
+    background: black;
+    outline: none;
 }
 
 .text-input button{
-  position:absolute;
-  height: 100%;
-  width: 50px;
-  border-radius: 20px;
-  bottom: 0px;
-  right: 1px;
-  border: 1px solid white;
+  position: absolute;
+    height: 33px;
+    width: 33px;
+    border-radius: 100%;
+    bottom: 2px;
+    right: 7px;
+    border: 1px solid white;
+  
   
   
 }
@@ -84,6 +84,8 @@ background: rgba(255,255,255,0.2);
   background: teal;
 
 }
-.up_arrow {
-  height: 20px;
+.text-input button[disabled]{
+  color: white;
+  background: gray;
 }
+
